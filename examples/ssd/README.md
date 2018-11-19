@@ -109,7 +109,7 @@ In this example, you can simple copy them into ssd folder, as use provided mxnet
 
 ```bash
 cd mxnet-model-server/examples
-cp -r template/* ssd/
+cp -r model_service_template/* ssd/
 ```
 
 In this example, we extend `MXNetVisionService`, provided by MMS for vision inference use-cases, and reuse its input image preprocess functionality to resize and transform the image shape. We only add custom pre-processing and post-processing steps. See [ssd_service.py](ssd_service.py) for more details on how to extend the base service and add custom pre-processing and post-processing.
